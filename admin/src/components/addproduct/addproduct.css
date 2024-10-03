@@ -1,0 +1,82 @@
+.addproduct {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 800px;
+  padding: 30px 50px;
+  margin: 15px 30px;
+  border-radius: 30px;
+  background: #333333;
+  color: white;
+}
+.addProductItemField {
+  width: 100%;
+  color: white;
+  font-size: 16px;
+}
+.addProductItemField input {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  box-sizing: border-box;
+  border: 1px solid #555555;
+  width: 100%;
+  height: 50px;
+  padding-left: 15px;
+  border-radius: 5px;
+  background: #555555;
+  font-size: 14px;
+}
+.productPrice {
+  display: flex;
+  gap: 40px;
+}
+.addProductItemField textarea {
+  box-sizing: border-box;
+  border: 1px solid #555555;
+  width: 100%;
+  height: 30vh;
+  padding-left: 15px;
+  border-radius: 5px;
+  background: #555555;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.productThumbnail {
+  height: 180px;
+  width: 180px;
+  border-radius: 30px;
+  object-fit: contain;
+  margin: 10px 0px;
+}
+.addProductButton {
+  margin-top: 20px;
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  background: #6089ff;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+@media (max-width: 800px) {
+  .addproduct {
+    padding: 30px 20px;
+    margin: 15px 10px;
+  }
+  .productPrice {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .productThumbnail {
+    height: 180px;
+    width: 180px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .addProductButton {
+    width: 100%;
+  }
+}

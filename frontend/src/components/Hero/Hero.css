@@ -1,0 +1,233 @@
+.hero {
+  background-image: url("https://images6.alphacoders.com/359/359723.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  color: white;
+  transition: all 1s ease-in-out;
+}
+.herobox {
+  transition: all 1s ease-in-out;
+  background: transparent;
+  backdrop-filter: blur(8px);
+  padding: 80px 50px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+}
+.heroLeft {
+  transition: all 1s ease-in-out;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 180px;
+  line-height: 1.1;
+}
+.heroRight {
+  transition: all 1s ease-in-out;
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.1;
+  padding-right: 100px;
+  padding-left: 140px;
+}
+.heroRight h2 {
+  transition: all 1s ease-in-out;
+  color: #eed982ff;
+  padding: 25px 0;
+  font-size: 50px;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 11px #323232;
+  text-align: left;
+}
+.heroSubText p {
+  transition: all 1s ease-in-out;
+  color: azure;
+  font-size: 16px;
+
+  text-shadow: 1px 1px 11px #323232;
+}
+.heroSubText {
+  transition: all 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  color: #eed982ff;
+  align-items: center;
+  padding: 40px 0;
+}
+.heroButton {
+  transition: all 1s ease-in-out;
+  display: flex;
+  width: 100%;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+.hero-latest-button {
+  transition: all 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 60%;
+  height: 80px;
+  border-radius: 50px;
+  color: white;
+  text-shadow: 1px 1px 11px #323232;
+  background: #eed982ff;
+  font-size: 30px;
+  font-weight: 700;
+  box-shadow: #323232;
+  cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+  /* .body {
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+  }
+  .hero {
+    background-image: cover;
+    max-width: 100%;
+    width: fit-content;
+  } */
+  .heroLeft {
+    padding: 0;
+  }
+  .herobox {
+    padding: 50px 30px;
+  }
+  .heroRight h2 {
+    font-size: 30px;
+  }
+  .heroSubText p {
+    font-size: 15px;
+  }
+  .hero-latest-button {
+    font-size: 20px;
+    height: 60px;
+  }
+}
+@media (max-width: 1600px) {
+  /* .hero {
+    background-image: cover;
+    max-width: 100%;
+    width: 100%;
+  } */
+  .heroLeft {
+    padding: 0;
+  }
+  .herobox {
+    padding: 40px 20px;
+  }
+  .heroRight h2 {
+    font-size: 30px;
+  }
+  .heroSubText p {
+    font-size: 15px;
+  }
+  .hero-latest-button {
+    font-size: 20px;
+    height: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    background-image: cover;
+    max-width: 100%;
+    width: 100%;
+  }
+  .heroLeft {
+    padding: 0;
+  }
+  .herobox {
+    padding: 30px 10px;
+
+    border-radius: 30px;
+  }
+
+  .heroRight h2 {
+    font-size: 20px;
+    padding: 10px 10px;
+  }
+  .heroSubText {
+    padding: 10px 10px;
+  }
+  .heroSubText p {
+    font-size: 10px;
+    padding: 10px 5px;
+  }
+  .hero-latest-button {
+    font-size: 10px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .heroLeft {
+    padding: 0;
+  }
+  .heroRight {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .herobox {
+    padding: 30px 10px;
+    border-radius: 30px;
+  }
+
+  .heroRight h2 {
+    font-size: 30px;
+    padding: 10px 10px;
+  }
+  .heroSubText {
+    padding: 10px 10px;
+  }
+  .heroSubText p {
+    font-size: 15px;
+    padding: 10px 5px;
+  }
+  .hero-latest-button {
+    font-size: 15px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .heroRight {
+    padding-right: 20px;
+    padding-left: 0px;
+  }
+  .heroLeft {
+    width: 0px;
+  }
+  .herobox {
+    padding: 30px 10px;
+    border-radius: 30px;
+  }
+
+  .heroRight h2 {
+    font-size: 25px;
+    padding: 10px 10px;
+  }
+  .heroSubText {
+    padding: 10px 10px;
+  }
+  .heroSubText p {
+    font-size: 15px;
+    padding: 10px 5px;
+  }
+  .hero-latest-button {
+    font-size: 15px;
+    height: 35px;
+  }
+}

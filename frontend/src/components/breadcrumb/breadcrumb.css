@@ -1,0 +1,27 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 170px;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  background-color: #eed982ff;
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .breadcrumb {
+    padding: 10px 50px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 500px) {
+  .breadcrumb {
+    padding: 10px 30px;
+    font-size: 10px;
+  }
+}

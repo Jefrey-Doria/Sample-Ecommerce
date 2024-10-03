@@ -1,0 +1,78 @@
+.offers {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://images7.alphacoders.com/545/545748.jpg");
+  background-size: cover;
+  box-shadow: inset 0px 0px 50px 35px rgba(0, 0, 0, 0.2);
+}
+.offersLeft {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-left: 40px;
+  justify-content: center;
+}
+.offersLeft h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+}
+.offersLeft p {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+.offersLeft button {
+  width: 282px;
+  height: 70px;
+  outline: none;
+  border-radius: 75px;
+  background: #eed982ff;
+  border: none;
+  font-size: 22px;
+  font-weight: 500;
+
+  box-shadow: #323232;
+  text-shadow: 1px 1px 11px #323232;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.offersRight {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+@media (max-width: 1024) {
+  .offersLeft h1 {
+    font-size: 30px;
+  }
+  .offersLeft p {
+    font-size: 18px;
+  }
+  .offersLeft button {
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 768) {
+  .offers {
+    height: 10vh;
+  }
+  .offersLeft h1 {
+    font-size: 25px;
+  }
+  .offersLeft p {
+    font-size: 16px;
+  }
+  .offersLeft button {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+  }
+}

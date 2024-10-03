@@ -1,0 +1,40 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  gap: 20px;
+  width: 100%;
+  max-width: 250px;
+  background: transparent;
+  box-shadow: 0 1px 3px #000000;
+}
+.sidebarItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 20px;
+  padding: 5px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  gap: 20px;
+  color: white;
+  transition: all 0.3s;
+  background: #525252;
+
+  font-size: 12px;
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    max-width: none;
+    flex-direction: row;
+    padding: 30px 30px;
+    justify-content: center;
+    height: max-content;
+  }
+  .sidebarItem {
+    margin: 0px;
+    padding: 5px 5px;
+    font-size: 12px;
+  }
+}

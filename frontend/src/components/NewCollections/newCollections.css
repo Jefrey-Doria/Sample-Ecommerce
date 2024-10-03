@@ -1,0 +1,75 @@
+.newCollections {
+  box-shadow: inset 0px 0px 25px 20px rgba(0, 0, 0, 0.2);
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/644/717/253/coffee-grounds-coffee-grounds-food-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  gap: 20px;
+  transition: all 1s ease-in-out;
+}
+.newCollections h1 {
+  transition: all 1s ease-in-out;
+  font-size: 45px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  width: 70%;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.collections {
+  transition: all 1s ease-in-out;
+  box-shadow: 0px 0px 25px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px 30px;
+  margin-top: 50px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 50px;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1200px) {
+  .newCollections {
+    padding-top: 30px;
+    height: 90vh;
+  }
+  .newCollections h1 {
+    font-size: 40px;
+  }
+  .collections {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .newCollections {
+    padding-top: 30px;
+    height: 75vh;
+  }
+  .newCollections h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .newCollections {
+    padding-top: 30px;
+    height: 200vh;
+  }
+  .newCollections h1 {
+    font-size: 20px;
+  }
+  .collections {
+    grid-template-columns: 1fr 1fr;
+  }
+}
